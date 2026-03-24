@@ -29,11 +29,14 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
     "prettier": "^3.8.1",
-    "typescript-eslint": "^8.57.1"
+    "typescript-eslint": "^8.57.2"
   },
   "lint-staged": {
     "*.{ts,js}": [
       "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.json": [
       "prettier --write"
     ]
   }
